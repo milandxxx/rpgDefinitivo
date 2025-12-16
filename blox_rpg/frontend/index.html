@@ -6,8 +6,20 @@
 <link rel='stylesheet' href='style.css'>
 </head>
 <body>
-<h1>Blox RPG</h1>
-<canvas id='game' width='800' height='500'></canvas>
-<script src='canvas.js'></script>
+
+<div id='login'>
+    <input id='user' placeholder='Usuario'>
+    <input id='pass' type='password' placeholder='Contraseña'>
+    <button onclick='login()'>Login</button>
+    <button onclick='register()'>Register</button>
+</div>
+
+<div id='gameUI' style='display:none'>
+    <h2 id='hud'></h2>
+    <button onclick='getFruit()'>?? Fruta</button>
+    <canvas id='game' width='800' height='500'></canvas>
+</div>
+
+<script src='game.js'></script>
 </body>
 </html>

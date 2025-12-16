@@ -1,11 +1,11 @@
-from flask_jwt_extended import create_access_token
 from db import get_db
+from flask_jwt_extended import create_access_token
 
 def register(username, password):
     db = get_db()
     c = db.cursor()
     c.execute(
-        'INSERT INTO users (username,password,level,exp,fruit) VALUES (?,?,1,0,NULL)',
+        'INSERT INTO users (username,password,level,exp,hp,fruit) VALUES (?,?,1,0,100,NULL)',
         (username, password)
     )
     db.commit()
@@ -14,10 +14,7 @@ def register(username, password):
 def login(username, password):
     db = get_db()
     c = db.cursor()
-    c.execute(
-        'SELECT * FROM users WHERE username=? AND password=?',
-        (username, password)
-    )
+    c.execute('SELECT * FROM users WHERE username=? AND password=?', (username,password))
     user = c.fetchone()
     db.close()
     if user:

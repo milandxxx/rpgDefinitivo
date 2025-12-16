@@ -13,6 +13,7 @@ def init_db():
         password TEXT,
         level INTEGER,
         exp INTEGER,
+        hp INTEGER,
         fruit TEXT
     )
     ''')
