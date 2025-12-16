@@ -1,0 +1,10 @@
+﻿using UnityEngine;
+
+public class DualKatana : MonoBehaviour
+{
+    public void PickUp()
+    {
+        Debug.Log(""Picked up DualKatana"");
+        // Agregar al inventario del jugador
+    }
+}

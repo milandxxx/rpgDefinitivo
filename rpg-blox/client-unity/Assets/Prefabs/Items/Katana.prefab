@@ -1,0 +1,10 @@
+﻿using UnityEngine;
+
+public class Katana : MonoBehaviour
+{
+    public void PickUp()
+    {
+        Debug.Log(""Picked up Katana"");
+        // Agregar al inventario del jugador
+    }
+}

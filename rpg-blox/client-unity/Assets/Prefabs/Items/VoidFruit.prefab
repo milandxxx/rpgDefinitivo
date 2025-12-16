@@ -1,0 +1,10 @@
+﻿using UnityEngine;
+
+public class VoidFruit : MonoBehaviour
+{
+    public void PickUp()
+    {
+        Debug.Log(""Picked up VoidFruit"");
+        // Agregar al inventario del jugador
+    }
+}

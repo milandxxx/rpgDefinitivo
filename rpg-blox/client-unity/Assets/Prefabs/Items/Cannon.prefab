@@ -1,0 +1,10 @@
+﻿using UnityEngine;
+
+public class Cannon : MonoBehaviour
+{
+    public void PickUp()
+    {
+        Debug.Log(""Picked up Cannon"");
+        // Agregar al inventario del jugador
+    }
+}

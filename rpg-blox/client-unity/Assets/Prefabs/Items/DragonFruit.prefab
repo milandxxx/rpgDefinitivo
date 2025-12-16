@@ -1,0 +1,10 @@
+﻿using UnityEngine;
+
+public class DragonFruit : MonoBehaviour
+{
+    public void PickUp()
+    {
+        Debug.Log(""Picked up DragonFruit"");
+        // Agregar al inventario del jugador
+    }
+}

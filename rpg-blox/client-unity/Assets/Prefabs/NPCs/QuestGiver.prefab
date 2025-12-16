@@ -1,0 +1,11 @@
+﻿using UnityEngine;
+
+public class QuestGiver : MonoBehaviour
+{
+    void Interact()
+    {
+        Debug.Log(""Interacting with QuestGiver"");
+        // Si es Quest, entrega quest
+        // Si es Shop, abre UI tienda
+    }
+}

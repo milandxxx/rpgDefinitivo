@@ -1,0 +1,18 @@
+﻿using UnityEngine;
+
+public class BossSea2 : MonoBehaviour
+{
+    public int hp = 1500;
+    public int atk = 120;
+
+    void Update()
+    {
+        // IA simple: seguir jugador, atacar si cerca
+    }
+
+    public void DropLoot()
+    {
+        Debug.Log(""Dropping loot..."");
+        // Beli, fragments, frutas
+    }
+}

@@ -1,0 +1,10 @@
+﻿using UnityEngine;
+
+public class VoidBlaster : MonoBehaviour
+{
+    public void PickUp()
+    {
+        Debug.Log(""Picked up VoidBlaster"");
+        // Agregar al inventario del jugador
+    }
+}

@@ -1,0 +1,10 @@
+﻿using UnityEngine;
+
+public class Shisui : MonoBehaviour
+{
+    public void PickUp()
+    {
+        Debug.Log(""Picked up Shisui"");
+        // Agregar al inventario del jugador
+    }
+}

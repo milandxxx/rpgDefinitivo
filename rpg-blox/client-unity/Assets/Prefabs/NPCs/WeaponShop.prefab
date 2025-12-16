@@ -1,0 +1,11 @@
+﻿using UnityEngine;
+
+public class WeaponShop : MonoBehaviour
+{
+    void Interact()
+    {
+        Debug.Log(""Interacting with WeaponShop"");
+        // Si es Quest, entrega quest
+        // Si es Shop, abre UI tienda
+    }
+}

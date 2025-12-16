@@ -1,0 +1,10 @@
+﻿using UnityEngine;
+
+public class Yoru : MonoBehaviour
+{
+    public void PickUp()
+    {
+        Debug.Log(""Picked up Yoru"");
+        // Agregar al inventario del jugador
+    }
+}

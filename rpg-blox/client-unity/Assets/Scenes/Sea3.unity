@@ -1,0 +1,16 @@
+﻿%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1
+GameObject:
+  m_Name: Player
+  m_Component:
+  - component: {fileID: 11500000} # PlayerMovement y CombatController
+--- !u!1 &2
+GameObject:
+  m_Name: NPCs
+--- !u!1 &3
+GameObject:
+  m_Name: Enemies
+--- !u!1 &4
+GameObject:
+  m_Name: Items

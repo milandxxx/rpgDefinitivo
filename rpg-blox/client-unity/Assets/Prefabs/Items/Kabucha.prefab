@@ -1,0 +1,10 @@
+﻿using UnityEngine;
+
+public class Kabucha : MonoBehaviour
+{
+    public void PickUp()
+    {
+        Debug.Log(""Picked up Kabucha"");
+        // Agregar al inventario del jugador
+    }
+}

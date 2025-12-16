@@ -1,0 +1,10 @@
+﻿using UnityEngine;
+
+public class DarkFruit : MonoBehaviour
+{
+    public void PickUp()
+    {
+        Debug.Log(""Picked up DarkFruit"");
+        // Agregar al inventario del jugador
+    }
+}

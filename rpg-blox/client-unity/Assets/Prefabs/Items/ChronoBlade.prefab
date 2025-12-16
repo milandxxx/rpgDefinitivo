@@ -1,0 +1,10 @@
+﻿using UnityEngine;
+
+public class ChronoBlade : MonoBehaviour
+{
+    public void PickUp()
+    {
+        Debug.Log(""Picked up ChronoBlade"");
+        // Agregar al inventario del jugador
+    }
+}

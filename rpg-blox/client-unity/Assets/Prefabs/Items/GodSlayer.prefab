@@ -1,0 +1,10 @@
+﻿using UnityEngine;
+
+public class GodSlayer : MonoBehaviour
+{
+    public void PickUp()
+    {
+        Debug.Log(""Picked up GodSlayer"");
+        // Agregar al inventario del jugador
+    }
+}

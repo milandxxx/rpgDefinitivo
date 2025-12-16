@@ -1,0 +1,18 @@
+﻿using UnityEngine;
+
+public class SeaMonster : MonoBehaviour
+{
+    public int hp = 400;
+    public int atk = 40;
+
+    void Update()
+    {
+        // IA simple: seguir jugador, atacar si cerca
+    }
+
+    public void DropLoot()
+    {
+        Debug.Log(""Dropping loot..."");
+        // Beli, fragments, frutas
+    }
+}
