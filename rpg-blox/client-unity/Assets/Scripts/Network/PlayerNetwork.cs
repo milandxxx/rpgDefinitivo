@@ -1,25 +1,37 @@
+﻿using UnityEngine;
 using NativeWebSocket;
-using UnityEngine;
+using System.Text;
 
 public class PlayerNetwork : MonoBehaviour
 {
-    WebSocket ws;
+    public static PlayerNetwork Instance;
+    private WebSocket ws;
+
+    void Awake()
+    {
+        if (Instance == null) Instance = this;
+        else Destroy(gameObject);
+    }
 
     async void Start()
     {
         ws = new WebSocket(""ws://localhost:8765"");
 
-        ws.OnMessage += (bytes) =>
-        {
-            string msg = System.Text.Encoding.UTF8.GetString(bytes);
+        ws.OnOpen += () => { Debug.Log(""Conectado al servidor""); };
+        ws.OnMessage += (bytes) => {
+            string msg = Encoding.UTF8.GetString(bytes);
             Debug.Log(""Server: "" + msg);
         };
-
+        ws.OnError += (e) => { Debug.LogError(""WS Error: "" + e); };
         await ws.Connect();
     }
 
-    void Update()
+    public async void Send(string json)
     {
-        ws.DispatchMessageQueue();
+        if (ws.State == WebSocketState.Open)
+            await ws.SendText(json);
     }
+
+    void Update() { ws.DispatchMessageQueue(); }
+    async void OnApplicationQuit() { await ws.Close(); }
 }
