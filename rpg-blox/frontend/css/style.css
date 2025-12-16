@@ -1,0 +1,31 @@
+﻿body {
+  background:#0b0f1a;
+  color:white;
+  font-family:Arial;
+}
+
+#hud {
+  background:#111;
+  padding:10px;
+  display:flex;
+  gap:15px;
+}
+
+#menu {
+  margin:10px;
+}
+
+button {
+  background:#222;
+  color:white;
+  border:none;
+  padding:10px;
+  margin:5px;
+  cursor:pointer;
+}
+
+#content {
+  margin:20px;
+  padding:15px;
+  background:#151a2e;
+}
